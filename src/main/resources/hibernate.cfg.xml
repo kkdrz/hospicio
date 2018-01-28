@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hospicio</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Hospitacja"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Kierunek"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Komisjahospitacyjna"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.KomisjahospitacyjnaPracownik"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Kurs"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.KursSemestr"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Planhospitacji"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Pracownik"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.PracownikSpecjalizacja"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Protokolhospitacji"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Rodzajsemestru"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Rola"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Semestr"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Specjalizacja"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Stopiennaukowy"/>
+        <mapping class="pl.edu.pwr.drozd.hospicio.domain.entity.hibernate.Zajecia"/>
+
+    </session-factory>
+</hibernate-configuration>
